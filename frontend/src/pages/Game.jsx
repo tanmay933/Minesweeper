@@ -102,7 +102,7 @@ export default function Game() {
 
     try {
       // ✅ fixed: absolute URL ensures it hits backend port 5001
-      const res = await fetch(`${API_BASE}/api/scores`, {
+      const res = await fetch("/api/scores", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ 
