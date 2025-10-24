@@ -8,7 +8,8 @@ export default defineConfig({
     port: Number(process.env.PORT) || 5173,
     proxy: {
       "/api": {
-        target: "http://localhost:5001",
+        target: "https://minesweeper-backend-150b.onrender.com",
+        // target: "http://localhost:5001",
         changeOrigin: true,
         secure: false,
       },
